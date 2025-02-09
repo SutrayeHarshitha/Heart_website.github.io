@@ -13,6 +13,8 @@ const Navbar = () => {
     // { path: '/model', label: 'Model' },
     // { path: '/resources', label: 'Resources' },
     { path: '/contact', label: 'Contact' },
+    { path: '/Login', label: 'Login' },
+    { path: '/Signup', label: 'Sign Up' },
   ];
 
   return (

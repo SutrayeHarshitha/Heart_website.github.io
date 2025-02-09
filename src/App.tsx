@@ -1,14 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Heart, Activity, BookOpen, Mail, Menu, X } from 'lucide-react';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Prediction from './pages/Prediction';
 import ModelExplanation from './pages/ModelExplanation';
-// import Resources from './pages/Resources';
+import Resources from './pages/Resources';
 import Contact from './pages/Contact';
+import LoginPage from './pages/LoginPage';
 import Footer from './components/Footer';
+import Signup from './pages/Signup';
 
 function App() {
   return (
@@ -20,12 +21,14 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/predict" element={<Prediction />} />
-            {/* <Route path="/model" element={<ModelExplanation />} /> */}
-            {/* <Route path="/resources" element={<Resources />} /> */}
+            <Route path="/model" element={<ModelExplanation />} />
+            <Route path="/resources" element={<Resources />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/signup" element={<Signup />} />
           </Routes>
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Router>
   );
